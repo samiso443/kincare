@@ -8,8 +8,22 @@ h2, h5 {
 	margin-bottom: 2rem;
 }
 
+h2 {
+	color: #fbc072;
+	font-weight: bold;
+}
+
 h3 {
 	margin-bottom: 1.5rem;
+}
+
+h5 {
+	color: #1a88b2;
+	font-weight: 400;
+}
+
+.navbar {
+	background-color: #60cdf6;
 }
 
 .navbar-brand b {
@@ -43,8 +57,9 @@ nav.nav-bg-color {
 }
 
 #login:hover, #download:hover {
-	background-color: #fff;
-	color: #60cdf6;
+	background-color: #fbc072;
+	border: 1px solid #fbc072;
+	/*color: #60cdf6;*/
 	transition: ease .8s;
 }
 
@@ -62,6 +77,10 @@ header,
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.fuster {
+	color: #fbc072;
 }
 
 section, #footer {
@@ -133,6 +152,18 @@ section, #footer {
 
 #footer {
 	background-color: #60cdf6;
+}
+
+.footer-copyright {
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.aligncenter {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
 }
 
 #logo-white {
