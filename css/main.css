@@ -5,7 +5,7 @@ html {
 }
 
 h2, h5 {
-	margin-bottom: 2rem;
+	margin-bottom: 2.5rem;
 }
 
 h2 {
@@ -22,16 +22,19 @@ h5 {
 	font-weight: 400;
 }
 
-.navbar {
-	background-color: #60cdf6;
+@media screen and (max-width: 991px) {
+	.navbar {
+		background-color: #fbc072;
+	}
+
 }
 
-.navbar-brand b {
+
+/*.navbar-brand b {
 	font-weight: 1000;
-	
 }
 
-/*.navbar-brand {
+.navbar-brand {
 	width: 500px;
 }*/
 
@@ -45,22 +48,33 @@ h5 {
 }
 
 nav.nav-bg-color {
-	background-color: #60cdf6;
+	background-color: #fbc072;
 	transition: ease .8s; 
 }
 
-#login, #download {
+#login {
 	color: #fff;
-	font-weight: 400;
 	border: 1px solid #fff;
-	border-radius: 4px;
+	border-radius: 10em;
 }
 
-#login:hover, #download:hover {
+#download {
+	background-color: #fbc072;
+	color: #fff;
+	border-radius: 10em;
+}
+
+#login:hover {
 	background-color: #fbc072;
 	border: 1px solid #fbc072;
+	/*border: 1px solid #fff;*/
 	/*color: #60cdf6;*/
 	transition: ease .8s;
+}
+
+.btn#login {
+	padding: 10px 18px;
+	margin: 0;
 }
 
 html,
@@ -71,7 +85,7 @@ header,
 }
 
 #intro {
-    background: url("../img/cardiac.jpg")
+    background: url("../img/dominik.jpg")
     no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -84,20 +98,38 @@ header,
 }
 
 section, #footer {
-	padding: 5rem;
+	padding: 4.5rem;
 }
 
 #features {
-	background-color: #60cdf6;
+	background-color: #fbc072;
 	color: #fff;
+	min-height: 580px;
 }
 
 .carousel-img {
 	width: 60%;
+} 
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-indicators {
+    bottom: -50px;
 }
 
 .feat-text {
 	padding: 2rem;
+}
+
+.card {
+	background-color: #fbc072;
+}
+
+#features .card-body {
+	padding-bottom: 0;
 }
 
 @media screen and (min-width: 992px) {
@@ -107,16 +139,21 @@ section, #footer {
 	}
 }
 
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
 /*#faq .row {
 	padding: 85px;
 }*/
 
 @media screen and (min-width: 985px) {
 	#faq {
-    max-width: 850px;
-    margin: 0 auto;
-    /*padding: 85px 0;*/
-}
+    	max-width: 850px;
+    	margin: 0 auto;
+    	/*padding: 85px 0;*/
+	}
 }
 
 
@@ -151,13 +188,7 @@ section, #footer {
 }
 
 #footer {
-	background-color: #60cdf6;
-}
-
-.footer-copyright {
-    font-weight: 700;
-    color: #fff;
-    margin-top: 1rem;
+	background-color: #fbc072;
 }
 
 .aligncenter {

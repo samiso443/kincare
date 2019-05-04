@@ -14,14 +14,15 @@
 <body>
 	<!-- Navigation -->
 	<!-- <header> -->
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-none">
 			<div class="container">
 
 				<!-- Navbar brand -->
-				<a class="navbar-brand" href="index.html">Kin<b>care</b></a>
+				<!-- <a class="navbar-brand" href="index.html">Kin<b>care</b></a> -->
 				<!-- <a class="navbar-brand" >
-					<img src="img/kincare-logo-white-4.png" id="logo">
+					<img src="img/kincare-logo-white-4.png" id="logo" width="30" height="30" class="img-fluid d-inline-block align-top"> 
 				</a> -->
+				<img src="img/kincare-logo-white-4.png" id="logo" width="30" height="30" class="img-fluid d-inline-block align-top"> 
 
 
 				<!-- Collapse button -->
@@ -50,7 +51,7 @@
 							<a class="nav-link" href="#trend">Trending</a>
 						</li>
 						<li class="nav-item text-center">
-							<a class="nav-link" id="login" href="https://web.kin-care.net/" target="_blank">Log In</a>
+							<a class="nav-link btn btn-rounded" id="login" href="https://web.kin-care.net/" target="_blank">Log In</a>
 						</li>
 					</ul>
 				</div>
@@ -71,9 +72,7 @@
 							<hr class="hr-light">
 							<!-- Description -->
 							<h6 class="white-text my-4 font-weight-bold">Coordinate all your caregiving tasks quick and easy using one simple tool.</h6>
-							<a class="btn btn-large" id="download" href="https://itunes.apple.com/us/app/kincare/id1153103597" target="_blank">Download</a>
-							
-							
+							<a class="btn btn-large btn-rounded" id="download" href="https://itunes.apple.com/us/app/kincare/id1153103597" target="_blank">Download</a>
 						</div>					
 					</div>				
 				</div>
@@ -104,116 +103,96 @@
 		<section id="features">
 			<h2 class="text-white text-center">Features</h2>
 			<!--Carousel Wrapper-->
-			<div id="carousel-example-1z" class="carousel slide" data-ride="carousel">
+			<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 				<!--Indicators-->
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
 					<li data-target="#carousel-example-1z" data-slide-to="1"></li>
 					<li data-target="#carousel-example-1z" data-slide-to="2"></li>
-					<li data-target="#carousel-example-1z" data-slide-to="3"></li>
-					<li data-target="#carousel-example-1z" data-slide-to="4"></li>
-					<li data-target="#carousel-example-1z" data-slide-to="5"></li>
 				</ol>
 				<!--/.Indicators-->
 				<!--Slides-->
 				<div class="carousel-inner" role="listbox">
 					<div class="container">
-					<!--First slide-->
-					<div class="carousel-item active">
-						<div class="row">
-							<div class="col-lg-6 text-center">
-								<img src="img/ipad-screen-1.jpg" class="img-fluid img-thumbnail carousel-img">
-							</div>
-							<div class="col-lg-6 feat-text">
-								<h3>Setting Up the Profile</h3>
-								<ul>
-									<li>Here you can set the basic information for your Care Recipient and Lead Caregiver.</li>
-									<li>The app offers different features based on whether or not the Care Recipient will be using the app.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!--/First slide-->
-					<!--Second slide-->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-lg-6 text-center">
-								<img src="img/ipad-screen-2.gif" class="img-fluid img-thumbnail carousel-img">
-							</div>
-							<div class="col-lg-6 feat-text">
-								<h3>Keep other Caregivers in the Loop</h3>
-								<ul>
-									<li>Caregivers and Community Members can leave feedback about their recent visits with the Care Recipient.</li>
-									<li>The Care Recipient’s vitals, mood, and other information is also displayed on this screen.</li>
-								</ul>
+
+						<!--First slide-->
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="card flex-md-row mb-4 shadow-none h-md-250">
+										<div class="card-body d-flex flex-column align-items-start">
+											<h3 class="font-weight-bold">Recipient Profile Set Up</h3>
+											<p>You can fill out basic information for your care recipient and lead caregiver. The app offers different features based on whether or not the care recipient will be using the app.</p>
+										</div>
+										<img class="img-fluid img-thumbnail card-img-right flex-auto d-none d-lg-block" src="img/ipad-screen-1.jpg" style="width: 250px; height: 300px;">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card flex-md-row mb-4 shadow-none h-md-250">
+										<div class="card-body d-flex flex-column align-items-start">
+											<h3 class="font-weight-bold">Include other Caregivers</h3>
+											<p>
+												Caregivers and community members can leave feedback about their recent visits with the care recipient. The care recipient’s vitals, mood, and other information is also displayed on this screen.
+											</p>
+										</div>
+										<img class="img-fluid img-thumbnail card-img-right flex-auto d-none d-lg-block"src="img/ipad-screen-2.gif" style="width: 250px; height: 300px;">
+									</div>
+								</div>							
 							</div>
 						</div>
-					</div>
-					<!--/Second slide-->
-					<!--Third slide-->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-lg-6 text-center">
-								<img src="img/ipad-screen-3.jpg" class="img-fluid img-thumbnail carousel-img">
-							</div>
-							<div class="col-lg-6 feat-text">
-								<h3>Community Members</h3>
-								<ul>
-									<li>These might include family, neighbors, friends, healthcare providers, and others. The Kincare app organizes their availability to help complete certain tasks.</li>
-									<li>Community Members are able to communicate with the other members of the group to receive tasks, collect information and contribute to the caregiving process.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!--/Third slide-->
-					<!--Fourth slide-->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-lg-6 text-center">
-								<img src="img/ipad-screen-4.gif" class="img-fluid img-thumbnail carousel-img">
-							</div>
-							<div class="col-lg-6 feat-text">
-								<h3>Work with other Caregivers</h3>
-								<ul>
-									<li>Tasks and visits can be scheduled easily from the app.</li>
-									<li>If the Care Recipient has an appointment when you’re unavailable, you can ask other Caregivers to help.</li>
-								</ul>
+						<!--/First slide-->
+						<!--Second slide-->
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="card flex-md-row mb-4 shadow-none h-md-250">
+										<div class="card-body d-flex flex-column align-items-start">
+											<h3 class="font-weight-bold">Community Members</h3>
+											<p>The Kincare app organizes the availability of family members, neighbors, friends, healthcare providers, or others to help complete tasks and communicate with one another.</p>
+										</div>
+										<img class="img-fluid img-thumbnail card-img-right flex-auto d-none d-lg-block" src="img/ipad-screen-3.jpg" style="width: 250px; height: 300px;">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card flex-md-row mb-4 shadow-none h-md-250">
+										<div class="card-body d-flex flex-column align-items-start">
+											<h3 class="font-weight-bold">Working with Others</h3>
+											<p>
+												Tasks and visits can be scheduled easily from the app and if the care recipient has an appointment when you are unavailable, you can ask other caregivers for help.
+											</p>
+										</div>
+										<img class="img-fluid img-thumbnail card-img-right flex-auto d-none d-lg-block"src="img/ipad-screen-4.gif" style="width: 250px; height: 300px;">
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!--/Fourth slide-->
-					<!--Fifth slide-->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-lg-6 text-center">
-								<img src="img/ipad-screen-5.jpg" class="img-fluid img-thumbnail carousel-img">
-							</div>
-							<div class="col-lg-6 feat-text">
-								<h3>Improve Caregiving</h3>
-								<ul>
-									<li>The Kincare app stores data securely to create a history for the Care Recipient.</li>
-									<li>This data can be easily retrieved for use in doctor or pharmacy visits.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!--/Fifth slide-->
-					<!--Sixth slide-->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-lg-6 text-center">
-								<img src="img/ipad-screen-6.jpg" class="img-fluid img-thumbnail carousel-img">
-							</div>
-							<div class="col-lg-6 feat-text">
-								<h3>Add Schedules</h3>
-								<ul>
-									<li>Caregivers can add new events to manage medication doses or other procedures that must occur at specific intervals.</li>
-									<li>Users can set up automatic reminders for each event.</li>
-								</ul>
+						<!--/Second slide-->
+						<!--Third slide-->
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="card flex-md-row mb-4 shadow-none h-md-250">
+										<div class="card-body d-flex flex-column align-items-start">
+											<h3 class="font-weight-bold">Improve Caregiving</h3>
+											<p>The Kincare app stores data securely to create a history for the care recipient which can easily be retrieved for use when visiting your doctor or pharmacy.</p>
+										</div>
+										<img class="img-fluid img-thumbnail card-img-right flex-auto d-none d-lg-block" src="img/ipad-screen-5.jpg" style="width: 250px; height: 300px;">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card flex-md-row mb-4 shadow-none h-md-250">
+										<div class="card-body d-flex flex-column align-items-start">
+											<h3 class="font-weight-bold">Add Schedules</h3>
+											<p>
+												Caregivers can add new events to manage medication doses or other procedures that must occur at specific intervals and users can set up automatic reminders for each event.
+											</p>
+										</div>
+										<img class="img-fluid img-thumbnail card-img-right flex-auto d-none d-lg-block"src="img/ipad-screen-6.jpg" style="width: 250px; height: 300px;">
+									</div>
+								</div>							
 							</div>
 						</div>
-					</div>
-					<!--/Sixth slide-->
+						<!--/Third slide-->
 					</div>
 				</div>
 				<!--/.Slides-->
@@ -277,24 +256,13 @@
 		<div class="container">
 			<div class="row">
 				<div>
-					<img src="img/kincare-logo-white.png" id="logo-white" class="img-fluid aligncenter">
-					<p class="footer-copyright aligncenter">©2019 Kincare</p>
+					<img src="img/kincare-logo-white.png" id="logo-white" class="img-fluid aligncenter mb-3">
+					<p class="text-white aligncenter">©2019 Kincare</p>
 				</div>
 			</div>
 		</div>
 	</footer>
 	<!-- Footer -->
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- SCRIPTS -->

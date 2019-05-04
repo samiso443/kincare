@@ -17,13 +17,13 @@ sr.reveal('.showcase-right', {
 (function () {
 
 	// Navbar background after scroll
-	// $(window).on('scroll', function() {
-	// 	if($(window).scrollTop()) {
-	// 		$('nav').addClass('nav-bg-color');
-	// 	} else {
-	// 		$('nav').removeClass('nav-bg-color');
-	// 	}
-	// });
+	$(window).on('scroll', function() {
+		if($(window).scrollTop()) {
+			$('nav').addClass('nav-bg-color');
+		} else {
+			$('nav').removeClass('nav-bg-color');
+		}
+	});
 	
 	// Faq slide toggle
 	$('h5.question').click(function() { 
