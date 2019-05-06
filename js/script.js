@@ -49,7 +49,8 @@ sr.reveal('.showcase-right', {
 		var parentElm = $(this).parent();
 		if(parentElm.find('a')) {
 			var text = parentElm.find('a').text();
-			$('.image-container h3').text(text);
+			var link = parentElm.find('a').attr('href');
+			$('.image-container h3').html("<a href='" + link + "' target='_blank'>" + text + "</a>");
 		}
 		$('.image-container div a').remove();
 	});
