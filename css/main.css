@@ -22,25 +22,19 @@ h5 {
 	font-weight: 400;
 }
 
+/*Navbar styles*/
 @media screen and (max-width: 991px) {
 	.navbar {
 		background-color: #fbc072;
 	}
-
 }
 
-
-/*.navbar-brand b {
-	font-weight: 1000;
-}
-
-.navbar-brand {
+/*.navbar-brand {
 	width: 500px;
 }*/
 
 #logo {
-	width: 20%;
-	
+	width: 20%;	
 }
 
 .nav-item {
@@ -67,9 +61,13 @@ nav.nav-bg-color {
 #login:hover {
 	background-color: #fbc072;
 	border: 1px solid #fbc072;
-	/*border: 1px solid #fff;*/
-	/*color: #60cdf6;*/
 	transition: ease .8s;
+}
+
+#download:hover {
+	color: #000;
+	background-color: #fff;
+	transition:  ease .9s;
 }
 
 .btn#login {
@@ -86,6 +84,24 @@ header,
 
 #intro {
     background: url("../img/dominik.jpg")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#details #intro {
+    background: url("../img/cardiac.jpg")
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#trending #intro {
+    background: url("../img/jack-finnigan.jpg")
     no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -144,18 +160,12 @@ section, #footer {
     flex: 1 1 auto;
 }
 
-/*#faq .row {
-	padding: 85px;
-}*/
-
 @media screen and (min-width: 985px) {
 	#faq {
     	max-width: 850px;
     	margin: 0 auto;
-    	/*padding: 85px 0;*/
 	}
 }
-
 
 .question {
 	cursor: pointer;
@@ -182,11 +192,9 @@ section, #footer {
 .answer {
     padding: 1rem;
     margin-bottom: 1rem;
-    /*border: 2px solid #eaecef;*/
-    /*border-radius: 6px;*/
-    /*background-color: #faf8f6;*/
 }
 
+/*Footer styles*/
 #footer {
 	background-color: #fbc072;
 }
@@ -199,4 +207,52 @@ section, #footer {
 
 #logo-white {
 	width: 20%;
+}
+
+/*Details page styles*/
+#details section {
+	padding: 4.5rem 4.5rem 2rem 4.5rem;
+}
+
+#details img {
+	height: 80%;
+	display:block;
+    margin:auto;
+}
+
+.blue-1 {
+	background-color: #60cdf6;
+}
+
+.grey-1 {
+	background-color: #faf8f6;
+}
+
+.orange-1 {
+	background-color: #fbc072;
+}
+
+/*Trending page styles*/
+.image-container {
+    margin-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+.thumbnail-container {
+    max-height: 630px;
+    overflow-y: scroll;
+}
+
+.thumbnail-container div {
+    margin-bottom: 20px;
+}
+
+
+.thumbnail-container .card {
+    cursor: pointer;
+}
+
+.thumbnail-container .card-title {
+    text-shadow: 2px 2px 4px #000;
 }
