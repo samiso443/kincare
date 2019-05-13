@@ -9,7 +9,7 @@ h2, h5 {
 }
 
 h2 {
-	color: #fbc072;
+	color: #ffad42;
 	font-weight: bold;
 }
 
@@ -25,7 +25,7 @@ h5 {
 /*Navbar styles*/
 @media screen and (max-width: 991px) {
 	.navbar {
-		background-color: #fbc072;
+		background-color: #ffad42;
 	}
 }
 
@@ -40,6 +40,7 @@ h5 {
 .nav-item {
 	margin-left: 1rem;
 	text-shadow: 1px 1px 1px grey;
+	font-weight: bold;
 }
 
 @media screen and (max-width: 991px) {
@@ -49,7 +50,7 @@ h5 {
 }
 
 nav.nav-bg-color {
-	background-color: #fbc072;
+	background-color: #ffad42;
 	transition: ease .8s; 
 }
 
@@ -60,14 +61,14 @@ nav.nav-bg-color {
 }
 
 #download {
-	background-color: #fbc072;
+	background-color: #ffad42;
 	color: #fff;
 	border-radius: 10em;
 }
 
 #login:hover {
-	background-color: #fbc072;
-	border: 1px solid #fbc072;
+	background-color: #ffad42;
+	border: 1px solid #ffad42;
 	transition: ease .8s;
 }
 
@@ -117,7 +118,7 @@ header,
 }
 
 .fuster {
-	color: #fbc072;
+	color: #ffad42;
 }
 
 section, #footer {
@@ -125,7 +126,7 @@ section, #footer {
 }
 
 #features {
-	background-color: #fbc072;
+	background-color: #ffad42;
 	color: #fff;
 	min-height: 580px;
 }
@@ -134,13 +135,13 @@ section, #footer {
 	width: 60%;
 } 
 
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
+.carousel .carousel-indicators li {
+	width: 1rem;
+    height: 1rem;
 }
+
 .carousel-indicators {
-    bottom: -50px;
+    bottom: -100px;
 }
 
 .feat-text {
@@ -148,7 +149,7 @@ section, #footer {
 }
 
 .card {
-	background-color: #fbc072;
+	background-color: #ffad42;
 }
 
 #features .card-body {
@@ -203,7 +204,7 @@ section, #footer {
 
 /*Footer styles*/
 #footer {
-	background-color: #fbc072;
+	background-color: #ffad42;
 }
 
 .aligncenter {
@@ -237,7 +238,7 @@ section, #footer {
 }
 
 .orange-1 {
-	background-color: #fbc072;
+	background-color: #ffad42;
 }
 
 /*Trending page styles*/
