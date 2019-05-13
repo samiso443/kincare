@@ -33,18 +33,10 @@ sr.reveal('.showcase-right', {
 
 	// Thumbnail conatiner carousel implementation
 	$('.thumbnail-container .card').on('click', function(event) {
-		// var src = $(this).attr("src");
-		// $('.image-container div').attr("src", src); //incorrect
-		
-		// $(".image-container div").empty().append( 
-		//     $("<div>", {class: this.card}));
-		
-		// $('.thumbnail-container div').contents().appendTo('.image-container div');
-		
+				
 		var content = $(this).html();
 		$('.image-container div').replaceWith('<div class="card text-white">' + content + '</div>');
 		$('.thumbnail-container div').css("border", "none");
-		// $('.thumbnail-container img').css("border", "none");
 		$(this).css("border", "5px solid yellow");
 		var parentElm = $(this).parent();
 		if(parentElm.find('a')) {
@@ -53,6 +45,7 @@ sr.reveal('.showcase-right', {
 			$('.image-container h3').html("<a href='" + link + "' target='_blank'>" + text + "</a>");
 		}
 		$('.image-container div a').remove();
+
 	});
 
 }());
