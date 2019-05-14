@@ -250,6 +250,7 @@ section, #footer {
 
 .image-container h3 a {
 	color: #000;
+	text-decoration: underline;
 }
 
 .thumbnail-container {

@@ -33,7 +33,7 @@ sr.reveal('.showcase-right', {
 
 	// Thumbnail conatiner carousel implementation
 	$('.thumbnail-container .card').on('click', function(event) {
-				
+		event.preventDefault();		
 		var content = $(this).html();
 		$('.image-container div').replaceWith('<div class="card text-white">' + content + '</div>');
 		$('.thumbnail-container div').css("border", "none");
